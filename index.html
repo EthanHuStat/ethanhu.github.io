@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yichen Hu</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: nowrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .hero-photo {
+      flex-shrink: 0;
+    }
+
+    .hero-photo img {
+      width: 240px;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        gap: 20px;
+      }
+
+      .hero-photo img {
+        width: 200px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
@@ -25,9 +60,11 @@
         </p>
         <p>
           I am a Ph.D. candidate in the Department of Statistics at the
-          University of California, Davis. My research interests include
-          high-dimensional statistics, random matrix theory, manifold learning,
-          graph networks, and applications to data science and machine learning.
+          University of California, Davis, under the supervision of
+          <a href="https://xcding1212.github.io/" target="_blank">Xiucai Ding</a>.
+          My research interests include high-dimensional statistics, random
+          matrix theory, manifold learning, graph networks, and applications
+          to data science and machine learning.
         </p>
         <p>
           Before joining the Ph.D. program, I received my M.S. in Statistics
